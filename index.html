@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-UP</title>
+    <style>
+        .hr-lines{
+            position:relative;
+  max-width: 550px;
+  margin: 60px;
+  text-align:center;
+        }
+        .hr-lines:before{
+  content:" ";
+  height: 1px;
+  width: 110px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 1px;
+  width: 110px;
+  background: rgb(70, 68, 68);
+  display:block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+form{
+            width:30%;
+            margin:0 auto;
+            display: block;
+            padding: 50px;
+            box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+            border-top: 1px solid #d4d2d2; /* Black top border */
+            border-right: 1px solid #c5c1c1; /* Black right border */
+            border-left: 1px solid #c7c3c3; /* Black left border */
+            border-bottom: 1px solid white
+        }
+        #input{
+            padding:8px 12px;
+            width:90%;
+            margin:5px 0;
+            border: 5px;
+            border: solid 1px;
+        }
+        .button{
+            border:none;
+            border: 5px;
+            padding:12px 8px;
+            cursor: pointer;
+            margin:0px;
+            display: block;
+            font-size: 30px;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            background-color: black;
+            text-decoration-color: white;
+            color:white;
+        }
+        
+
+        #icons{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                gap:80px;
+                text-align: center;
+                margin: auto;
+                display: block;
+                font-size: 30px;
+            }
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <p>Already have an account?<a href="/signin.html">Sign In</a></p>
+    <h1>Sign Up</h1>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="input" placeholder="Enter Your Name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="input" placeholder="Enter your Email">
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="input" placeholder="Enter Your Password">
+        <br>
+        <br>
+        <input type="checkbox" id="terms"/> <label> I've Read And Agree with <strong>The Terms of Service </strong>And <strong>Privacy Policy</strong></label>
+        <br>
+        <br>
+        </div>
+        <br>
+        <button class="button" type="submit"><a href="/signin.html" style="color:white">Sign Up</a></button>
+        <p class="hr-lines">Or Sign Up With</p>
+        <div id="icons">
+        <i class="fa fa-google" id="google"></i>
+        <i class="fa fa-facebook" id="facebook"></i>
+        </div>
+    </form>
+</body>
+</html>
